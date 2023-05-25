@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hindi Handwritten Digit Recognition</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/drawing-board/drawingboard.min.css" />
+    <link rel="stylesheet" href="static/css/comman.css" />
+  </head>
+  <body>
+    <!-- Header Code -->
+    <nav class="navbar navbar-light bg-primary">
+      <center>
+      <a class="d-flex navbar-brand" href="#">
+        <h3 class="text-light px-2">Hindi Handwritten Digit Recognition</h3>
+      </a>
+    </center>
+      <div class="text-right">
+        <a href="./ref" class="text-light">
+          <button class="btn btn-light">
+            Reference Sheet
+          </button>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Body araa -->
+    <div class="container py-2">
+      <div class="row">
+        <div class="col-5">
+          <h6>Draw that Digit on Board below</h6>
+          <div
+            class="board drawing-board square-board m-2"
+            id="simple-board"
+          ></div>
+          <div class="d-inline w-100 text-center btn-socket">
+            <button class="btn btn-danger" onclick="ResetBG()">Clear</button>
+
+            <button
+              type="submit"
+              class="btn btn-success"
+              onclick="GetImageURL()"
+            >
+              Predict
+            </button>
+          </div>
+        </div>
+        <div class="col-7">
+          <h5>Predictions from Drawn Images :</h5>
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Drawn Image</th>
+                <th scope="col">Prediction</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" id="current-count">Current</th>
+                <td id="current-img">Loading...</td>
+                <td id="current-prediction">Loading...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Code -->
+    <nav
+      class="navbar navbar-light bg-primary sticky-bottom text-light d-flex justify-content-center"
+    >
+      <p class="text-light text-center">
+        Dataset Link :
+        <a
+          class="text-light"
+          href="https://archive.ics.uci.edu/ml/datasets/Devanagari+Handwritten+Character+Dataset"
+          >https://archive.ics.uci.edu/ml/datasets/Devanagari+Handwritten+Character+Dataset</a
+        >
+
+        <br />
+      </p>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/drawing-board/drawingboard.min.js"></script>
+    <script src="static/js/drawing-board-controls.js"></script>
+    <script src="static/js/imageAndTextUpdate.js"></script>
+  </body>
+</html>
