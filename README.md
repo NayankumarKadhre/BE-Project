@@ -1,7 +1,6 @@
 # Hindi-Handwritten-Digit-Recognition
 
-This project is Deep Learning Web Interfaced Hindi Digit recognition project. For sake of simplicity flask backend is used to minimize complexities. The Application provides users with an intuitive interface to draw the digits and the predictio is done by the model.
-or draw digits directly on a canvas for prediction. 
+This project is Deep Learning Web Interfaced Hindi Digit recognition project. For sake of simplicity flask backend is used to minimize complexities. The Application provides users with an intuitive interface to draw the digits and the prediction is done by the model.
 
 ### Tools used :
 - Jupyter Notebooks - Model Building , Data analysis , Exporting model
