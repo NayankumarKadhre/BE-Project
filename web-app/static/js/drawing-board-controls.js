@@ -15,7 +15,7 @@ simpleBoard.ev.bind("board:reset", why);
 simpleBoard.ev.unbind("board:reset", why);
 
 function why() {
-  alert("OH GOD WHY");
+  alert("WHY");
 }
 
 const ResetBG = () => {
