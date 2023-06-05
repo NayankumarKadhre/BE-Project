@@ -5,7 +5,6 @@ var simpleBoard = new DrawingBoard.Board("simple-board", {
   size: 20,
   webStorage: false,
 });
-//simpleBoard.addControl("Download"); //if the DrawingBoard.Control.Download class exists
 
 //listen to an event
 simpleBoard.ev.bind("board:reset", why);
