@@ -10,7 +10,6 @@ var simpleBoard = new DrawingBoard.Board("simple-board", {
 simpleBoard.ev.bind("board:reset", why);
 
 //stop listening to it
-
 simpleBoard.ev.unbind("board:reset", why);
 
 function why() {
